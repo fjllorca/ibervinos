@@ -3,39 +3,38 @@
 //Podemos hacerlo con una clase pojo para abarcar las 3 tablas
 
 class VinoTipoOrigen{
-   private $country, $city,$countryLanguage; 
+   private $vino, $Tipo,$origen; 
    
   
-   function __construct(Country $country, City $city,  CountryLanguage $countryLanguage) {
-       $this->country = $country;
-       $this->city = $city;
-       $this->countryLanguage = $countryLanguage;
+   function __construct(Vino $vino, Tipo $tipo,  Origen $origen) {
+       $this->vino = $vino;
+       $this->tipo = $tipo;
+       $this->origen = $origen;
    }
 
-   function getCountry() {
-       return $this->country;
+   function getVino() {
+       return $this->vino;
    }
 
-   function getCity() {
-       return $this->city;
+   function getTipo() {
+       return $this->Tipo;
    }
 
-   function getCountryLanguage() {
-       return $this->countryLanguage;
+   function getOrigen() {
+       return $this->origen;
    }
 
-   function setCountry(Country $country) {
-       $this->country = $country;
+   function setVino($vino) {
+       $this->vino = $vino;
    }
 
-   function setCity(City $city) {
-       $this->city = $city;
+   function setTipo($Tipo) {
+       $this->Tipo = $Tipo;
    }
 
-   function setCountryLanguage(CountryLanguage $countryLanguage) {
-       $this->countryLanguage = $countryLanguage;
+   function setOrigen($origen) {
+       $this->origen = $origen;
    }
-  
 }
 
 
